@@ -301,8 +301,8 @@ router.post( "/cardList", async ( req, res ) =>
             {
                 let linkInfo = linkList.find( link => link.comId == v.idx )
                 if ( linkInfo ) {
-                    v.level = linkInfo.level
-                    v.levelName = codeToStr( linkInfo.level )
+                    v.level = linkInfo.code
+                    v.levelName = codeToStr( linkInfo.code )
                 } else {
                 }
                 return v;
